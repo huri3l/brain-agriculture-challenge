@@ -117,7 +117,7 @@ export function RuralProducerDataModal({
       name: data.name,
       farm: data.farm,
       city: data.city,
-      state: data.state,
+      state: data.state.toUpperCase(),
       cultures: data.cultures,
       area: {
         arable: data.arable_area,
@@ -159,6 +159,7 @@ export function RuralProducerDataModal({
       })
     } else {
       form.reset(cleanForm)
+      form.clearErrors()
     }
   }, [ruralProducer, form])
 

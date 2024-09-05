@@ -1,0 +1,72 @@
+{
+  "rural_producer": [
+    {
+      "id": "7574",
+      "document": "784.138.740-76",
+      "name": "John Doe",
+      "farm": "Fazenda do Amanhecer",
+      "city": "Erechim",
+      "state": "RS",
+      "cultures": [
+        "Soja",
+        "Milho",
+        "Algodão"
+      ],
+      "area": {
+        "arable": 120,
+        "vegetation": 120,
+        "total": 240
+      }
+    },
+    {
+      "id": "64c7",
+      "document": "03.555.555/5555-55",
+      "name": "Bob Oden",
+      "farm": "Canto da Infância",
+      "city": "Florianópolis",
+      "state": "SC",
+      "cultures": [
+        "Café",
+        "Cana de Açúcar",
+        "Soja"
+      ],
+      "area": {
+        "arable": 10,
+        "vegetation": 10,
+        "total": 20
+      }
+    },
+    {
+      "id": "a46d",
+      "document": "122.131.231-23",
+      "name": "Eden Sha",
+      "farm": "Meu Recolher",
+      "city": "Cuiabá",
+      "state": "MG",
+      "cultures": [
+        "Algodão"
+      ],
+      "area": {
+        "arable": 14,
+        "vegetation": 14,
+        "total": 28
+      }
+    },
+    {
+      "id": "3826",
+      "document": "32.423.234/2342-34",
+      "name": "Bonnie Dan",
+      "farm": "Fazenda Animaizinhos",
+      "city": "Passo Fundo",
+      "state": "RS",
+      "cultures": [
+        "Soja"
+      ],
+      "area": {
+        "arable": 24,
+        "vegetation": 12,
+        "total": 36
+      }
+    }
+  ]
+}

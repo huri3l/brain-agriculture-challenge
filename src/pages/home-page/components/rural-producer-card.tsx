@@ -12,7 +12,7 @@ interface RuralProducerCardProps {
 
 export function RuralProducerCard({ data, onEdit, onDelete }: RuralProducerCardProps) {
   return (
-    <div className="w-full h-64 bg-card border border-border rounded-xl p-5 flex flex-col justify-between animate-in fade-in duration-500">
+    <div className="w-full h-72 bg-card border border-border rounded-xl p-5 flex flex-col justify-between animate-in fade-in duration-500">
       <div className="space-y-3">
         <div className="flex items-center gap-1.5">
           <Avatar className="size-14">
@@ -29,16 +29,15 @@ export function RuralProducerCard({ data, onEdit, onDelete }: RuralProducerCardP
           </p>
         </div>
 
-        <div>
-          <p>{data.farm} - {data.area.total} (hectares)</p>
-
-          <p className="text-sm text-muted-foreground inline-flex gap-6">
-            <span>Agricultável: {data.area.arable}</span>
-            <span>Vegetação: {data.area.vegetation}</span>
-          </p>
-          <p className="text-sm">
-
-          </p>
+        <div className="space-y-1">
+          <p>{data.farm}</p>
+          <div className="text-sm text-muted-foreground">
+            <p>{data.area.total} hectares</p>
+            <p className="inline-flex gap-6">
+              <span>Agricultável: {data.area.arable}</span>
+              <span>Vegetação: {data.area.vegetation}</span>
+            </p>
+          </div>
           <span className="text-muted-foreground text-sm">
             {data.city} - {data.state}
           </span>
