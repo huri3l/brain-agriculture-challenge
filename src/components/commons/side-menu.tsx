@@ -24,7 +24,7 @@ interface SideMenuProps {
 
 export const SideMenu = ({ device }: SideMenuProps) => {
   return (
-    <nav className={cn("flex flex-col justify-between py-4 pr-4 min-w-48 md:min-w-64 bg-background", device === 'mobile' && 'h-full')}>
+    <nav className={cn("flex flex-col justify-between py-4 pr-4 min-w-48 md:min-w-64 bg-card", device === 'mobile' && 'h-full')}>
       <ul className="space-y-1">
         {linksMap.map(({ label, icon, href }, idx) => {
           const Icon = icon
@@ -36,8 +36,8 @@ export const SideMenu = ({ device }: SideMenuProps) => {
               <Link
                 to={href}
                 className={cn(
-                  'flex gap-2 items-center py-2 px-8 w-full hover:bg-muted/50 transition rounded-r-lg cursor-pointer text-subtle-medium',
-                  isActive && 'bg-muted text-primary font-bold text-sm'
+                  'flex gap-2 items-center py-2 px-8 w-full hover:bg-muted/50 transition rounded-r-lg cursor-pointer',
+                  isActive && 'bg-muted text-primary font-bold'
                 )}
               >
                 <Icon className="stroke-[1.5] size-4" />

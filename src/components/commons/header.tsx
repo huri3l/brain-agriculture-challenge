@@ -9,7 +9,7 @@ export const Header = () => {
 
   return (
     <>
-      <header className="flex justify-between items-center p-3 sticky inset-0 h-[72px] bg-background z-50 border-b">
+      <header className="flex justify-between items-center p-3 sticky inset-0 h-[72px] bg-card z-50 border-b">
         <div className="flex gap-4 items-center">
           <button
             className="sm:hidden"
