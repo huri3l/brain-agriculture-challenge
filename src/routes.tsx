@@ -11,6 +11,7 @@ import { NotFoundPage } from './pages/not-found-page'
 export const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
+      <Route path="*" element={<NotFoundPage />} />
       <Route path="/"
         element={
           <Layout>
@@ -22,13 +23,6 @@ export const router = createBrowserRouter(
         element={
           <Layout>
             <DashboardPage />
-          </Layout>
-        }
-      />
-      <Route path="*"
-        element={
-          <Layout>
-            <NotFoundPage />
           </Layout>
         }
       />
