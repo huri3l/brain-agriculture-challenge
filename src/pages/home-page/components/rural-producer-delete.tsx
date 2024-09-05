@@ -37,7 +37,7 @@ export function RuralProducerDeleteModal({
           </Button>
 
           <Button type="button" onClick={() => {
-            deleteRuralProducer({ id: ruralProducer?.id })
+            deleteRuralProducer({ id: ruralProducer.id! })
             onOpenChange(false)
           }}>
             Sim

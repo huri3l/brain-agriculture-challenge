@@ -14,8 +14,10 @@ export interface RuralProducer {
 }
 
 export interface CreateRuralProducerMutationData extends RuralProducer {}
-export interface DeleteRuralProducerMutationData extends RuralProducer {}
 export interface UpdateRuralProducerMutationData extends RuralProducer {}
+export interface DeleteRuralProducerMutationData { 
+  id: string
+ }
 
 type RuralProducerResponse = {
   id: string;
