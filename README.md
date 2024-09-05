@@ -1,50 +1,11 @@
-# React + TypeScript + Vite
+# Brain Ag Challenge
+Link: [https://brain-agriculture-challenge.vercel.app/](https://brain-agriculture-challenge.vercel.app/)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto desenvolvido para contemplar o desafio técnico da [Brain Ag](https://www.brain.agr.br/).
 
-Currently, two official plugins are available:
+## Stack
+O projeto foi desenvolvido com **React + Vite** por conta da simplicidade, com algumas bibliotecas auxiliares. Foi utilizado **Tailwind CSS** para a estilização, junto de componentes do **shadcn/ui** para um desenvolvimento mais acelerado. Foi utilizado também **JSON Server** para simular uma API e o **React Query** para já deixar o Front-end estruturado para se comunicar com uma API de verdade. Para compartilhar estados, foi utilizado o **Redux Toolkit**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## Opiniões pessoais de desenvolvimento
+- **Vite**: o contexto da aplicação me parecer ser um Backoffice, o que elimina a necessidade de SEO, Server Side Rendering, e a aplicação fica mais simples se construída sem um framework como Next.js;
+- **Redux**: utilizei Redux pois foi solicitado no desafio, mas dado que o React Query está configurado para cachear as requisições, somente ele já seria o suficiente para compartilhar os estados necessários pela API. O meu cenário ideal de desenvolvimento se daria apenas com React Query e um hook personalizado para obter as informações da Dashboard. Caso a aplicação for crescer, é bom que o Redux já esteja instalado, mas eu consideraria utilizar o [Zustand](https://zustand.docs.pmnd.rs/getting-started/introduction).
